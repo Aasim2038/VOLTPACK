@@ -15,7 +15,7 @@ const LINK_PAYLOAD = {
   ]
 };
 
-export default function FinalDownloadPage() {
+export default function AdTimerPage({ params }: { params: { id: string } }) {
   const [isValidating, setIsValidating] = useState(true);
 
   // Simulation node check for dynamic premium feel

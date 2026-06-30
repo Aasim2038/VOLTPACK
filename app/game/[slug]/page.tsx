@@ -29,7 +29,7 @@ const HOSTERS = [
   { name: "Qiwi.gg Torrent/Direct Alternative", parts: 3, speed: "Moderate", icon: "⬇️", id: "qw_link_1" },
 ];
 
-export default function GameDetailPage({ params }) {
+export default function GameDetailPage({ params }: { params: { slug: string } }) {
   const [activeTab, setActiveTab] = useState("download");
 
   // Format dynamic slugs beautifully
